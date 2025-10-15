@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Diary — Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Image (blurred) -->
+  <div class="page-bg" id="pageBg">
+    <img src="assets/background.JPG" alt="bg" onerror="this.style.display='none'">
+  </div>
+
+  <main class="center-card">
+
+    <!-- Hero Image / Banner (optional, wide) -->
+    
+    <!-- Diary Logo -->
+    <div class="logo-container">
+      <img src="assets/bg.hero.jpg" alt="assets/bg.hero.jpg" class="diary-logo">
+    </div>
+
+    <!-- Title -->
+    <h1>My Personal Diary</h1>
+
+    <!-- Login Card -->
+    <form id="loginForm" class="card">
+      <h2>Login</h2>
+      <input id="loginUsername" type="text" placeholder="Username" autocomplete="username" required />
+      <input id="loginPassword" type="password" placeholder="Password" autocomplete="current-password" required />
+      <button type="submit" class="btn">Login</button>
+      <p class="small-links">
+        <a href="register.html">Create account</a> •
+        <a href="forgot.html">Forgot password?</a>
+      </p>
+      <p id="loginMsg" class="msg"></p>
+    </form>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

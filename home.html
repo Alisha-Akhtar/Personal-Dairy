@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"><img src="assets/bg-hero.jpg" alt="bg" onerror="this.style.display='none'"></div>
+
+  <header class="topbar">
+    <div class="left">
+      <h2>My Diary — <span id="userDisplay"></span></h2>
+    </div>
+    <div class="controls">
+      <input id="filterDate" type="date" title="Filter by date">
+      <input id="search" type="search" placeholder="Search..." />
+      <button id="exportBtn" class="small">Export</button>
+      <button id="toggleTheme" class="small">Theme</button>
+      <button id="logoutBtn" class="small danger">Logout</button>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="card new-entry">
+      <h3>New Entry</h3>
+      <input id="entryTitle" type="text" placeholder="Title (optional)" />
+      <textarea id="entryText" rows="5" placeholder="Write your thoughts..."></textarea>
+
+      <div class="entry-controls">
+        <label for="mood">Mood</label>
+        <select id="mood">
+          <option value="neutral">😐 Neutral</option>
+          <option value="happy">😊 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="angry">😡 Angry</option>
+          <option value="excited">🤩 Excited</option>
+          <option value="calm">😌 Calm</option>
+        </select>
+
+        <label for="entryDate">Date</label>
+        <input id="entryDate" type="date" />
+
+        <button id="saveEntry" class="btn">Save Entry</button>
+      </div>
+    </section>
+
+    <section class="card entries-list">
+      <h3>Saved Entries</h3>
+      <ul id="entriesList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

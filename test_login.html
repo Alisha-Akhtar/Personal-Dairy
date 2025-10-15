@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <body>
+    <h3>Quick login test</h3>
+    <input id="loginUsername" placeholder="username">
+    <input id="loginPassword" placeholder="password">
+    <button id="btn">Login</button>
+    <script>
+      document.getElementById('btn').onclick = function(){
+        console.log('btn clicked, username:', document.getElementById('loginUsername').value);
+        alert('JS works. Username: ' + document.getElementById('loginUsername').value);
+      };
+    </script>
+  </body>
+</html>

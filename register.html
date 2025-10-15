@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Diary — Register</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"><img src="assets/background.JPG" alt="bg" onerror="this.style.display='none'"></div>
+
+  <main class="center-card">
+    <img src="assets/bg.hero.jpg" alt="logo" class="logo" onerror="this.style.display='none'">
+    <h1>Create Account</h1>
+
+    <form id="registerForm" class="card">
+      <h2>Register</h2>
+      <input id="fullName" type="text" placeholder="Full name (optional)" />
+      <input id="registerUsername" type="text" placeholder="Username" required />
+      <input id="registerPassword" type="password" placeholder="Password" required />
+      <input id="confirmPassword" type="password" placeholder="Confirm password" required />
+      <button type="submit" class="btn">Register</button>
+      <p class="small-links"><a href="index.html">Back to Login</a></p>
+      <p id="regMsg" class="msg"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

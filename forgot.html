@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Personal Diary — Forgot Password</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"><img src="background.JPG" alt="bg" onerror="this.style.display='none'"></div>
+
+  <main class="center-card">
+    <img src="bg.hero.jpg" alt="logo" class="logo" onerror="this.style.display='none'">
+    <h1>Reset Password</h1>
+
+    <form id="forgotForm" class="card">
+      <h2>Forgot Password</h2>
+      <input id="forgotUsername" type="text" placeholder="Enter your username" required />
+      <input id="newPassword" type="password" placeholder="New password" required />
+      <input id="confirmNewPassword" type="password" placeholder="Confirm new password" required />
+      <button type="submit" class="btn">Set New Password</button>
+      <p class="small-links"><a href="index.html">Back to Login</a></p>
+      <p id="forgotMsg" class="msg"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
